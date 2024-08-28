@@ -18,7 +18,7 @@ window.addEventListener('scroll', function () {
 })
 
 
-// Mensaje 
+// Mensaje alerta formulario
 document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault(); // 
     alert('Su mensaje ha sido enviado con éxito. ¡Gracias por contactarnos!');
