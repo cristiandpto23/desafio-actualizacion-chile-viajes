@@ -1,14 +1,30 @@
 /* Cards */
+.card {
+    max-width: 49%;
+}
+
 .card-title {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
+
 .card-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
 }
+
 .img-fluid {
     height: 100% !important;
     width: 100% !important;
     object-fit: cover;
 }
+
+
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+// b9b3a1

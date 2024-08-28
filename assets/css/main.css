@@ -12018,13 +12018,17 @@ header img {
   }
 }
 /* Cards */
+.card {
+  max-width: 49%;
+}
+
 .card-title {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .card-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
@@ -12033,6 +12037,38 @@ header img {
   width: 100% !important;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}
+.testimonios__subcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.testimonios__card {
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+.testimonios__p,
+.testimonios__h5 {
+  color: #b9b3a1;
+  text-align: center;
+}
+
+.testimonios__img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #b9b3a1;
 }
 
 body {
