@@ -12000,6 +12000,12 @@ textarea.form-control-lg {
   margin-right: 10px;
 }
 
+.footer .contact__i {
+  width: 35px;
+  height: 35px;
+  margin: 4px 4px 0 0;
+}
+
 /* Header Hero Carousel*/
 header img {
   display: block;
