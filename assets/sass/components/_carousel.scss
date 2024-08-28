@@ -1,0 +1,17 @@
+/* Header Hero Carousel*/
+header img {
+    display: block;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: 50% 25%; */
+    object-position: center;
+} 
+
+
+
+@media (max-width: 576px) {
+    header img {
+        height: 300px;
+    }
+}

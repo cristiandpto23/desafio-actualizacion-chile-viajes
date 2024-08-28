@@ -1,0 +1,21 @@
+/* Navbar */
+.navbar {
+    font-size: 1.2rem;
+    height: 80px;
+    transition: background-color 800ms linear;
+}
+.navbar-toggler {
+    color: #DDEFF080 !important;
+    border: 1px solid #DDEFF080 !important;
+}
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+.navbar-brand h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.logo_navbar {
+    width: 40px;
+    margin-right: 10px;
+}
