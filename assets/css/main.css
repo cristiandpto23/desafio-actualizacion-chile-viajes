@@ -12000,10 +12000,19 @@ textarea.form-control-lg {
   margin-right: 10px;
 }
 
-.footer .contact__i {
+@media screen and (max-width: 991px) {
+  #navbarTogglerDemo02 {
+    background-color: #212529 !important;
+  }
+}
+.contact__i {
   width: 35px;
   height: 35px;
   margin: 4px 4px 0 0;
+}
+
+.form, .contact {
+  width: 99%;
 }
 
 /* Header Hero Carousel*/
@@ -12075,6 +12084,33 @@ header img {
   -o-object-fit: cover;
      object-fit: cover;
   border: 1px solid #b9b3a1;
+}
+
+/* Tooltips cambio de forma | color */
+.tooltip-inner {
+  padding: 10px;
+  background-color: gray;
+  color: white;
+}
+
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before {
+  border-top-color: gray;
+}
+
+.bs-tooltip-end .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
+  border-right-color: gray;
+}
+
+.bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
+  border-bottom-color: gray;
+}
+
+.bs-tooltip-start .tooltip-arrow::before,
+.bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
+  border-left-color: gray;
 }
 
 body {

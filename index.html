@@ -95,7 +95,7 @@
                     <h2 class="text-center my-4">¿Quienes Somos?</h2>
                     <hr class="border-2 rounded opacity-75 mb-4">
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-6 d-none d-md-block">
                             <img src="./assets/img/quienes-somos.jpg" class="img-fluid rounded" alt="Quienes somos">
                         </div>
                         <div class="col-12 col-md-6 d-flex flex-column my-4 justify-content-center">
@@ -264,59 +264,89 @@
             <h2 class="text-center my-4">Contacto</h2>
 
             <hr class="border-2 rounded opacity-75 mb-4">
-            
-                <div class="footer__content row align-items-center gap-4">
-                    <section class="col-12 col-md-6" >
+                <div class="container">
+                    <div class="row flex-column flex-md-row align-items-center">
                         <!--FORM -->
-                        <form class="form">
-                            <section class="row mt-4">
-                                <div class="col-6 mb-3">
-                                    <label class="pb-2">Nombre</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                        <section class="col-12 col-md-6" >
+                            <form class="form" id="form">
+                                <div class="row mt-4">
+                                    <div class="col-6 mb-3">
+                                        <label class="pb-2">
+                                            Nombre 
+                                            <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Ingrese su Nombre"></i>
+                                        </label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <label class="pb-2">
+                                            Email
+                                            <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Ingrese su Email"></i>
+                                        </label>
+                                        <input type="email" class="form-control" id="exampleFormControlInput1" required>
+                                    </div>
                                 </div>
-                                <div class="col-6 mb-3">
-                                    <label class="pb-2">Email</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                            </section>
 
-                            <div class="mb-3">
-                                <label class="pb-2">Mensaje</label>
-                                <textarea class="form-control" placeholder="Escribe tu mensaje" id="floatingTextarea"></textarea>
+                                <div class="mb-3">
+                                    <label class="pb-2">
+                                        Mensaje
+                                        <i class="fa-solid fa-circle-info" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-custom-class="custom-tooltip" data-bs-title="Ingrese su Mensaje"></i>
+                                    </label>
+                                    <textarea class="form-control" id="floatingTextarea" required></textarea>
+                                </div>
+                                <div class="mb-3"> 
+                                    <input type="checkbox" class="" required>
+                                        <a href="#" class="ms-2 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Acepto los términos y condiciones
+                                        </a>
+                                </div>
+                                <button type="submit" class="mt-1 btn btn-outline-primary bg-primary text-white col-12 col-lg-2">Enviar</button>
+                            </form>
+                        </section>
+                        <!-- CONTACTO -->
+                        <section class="col-12 col-md-6"">
+                            <div class="contact">
+                                <ul class="contact__ul d-flex flex-column align-items-start">
+                                    <li class="contact__li d-flex">
+                                        <i class="fa-solid fa-phone contact__i"></i>
+                                        <p class="contact__p">+56999887766</p>
+                                    </li>
+                                    <li class="contact__li d-flex">
+                                        <i class="fa-solid fa-envelope contact__i"></i>
+                                        <p class="contact__p">contacto@viajeschile.com</p>
+                                    </li>
+                                    <li class="contact__li d-flex">
+                                        <i class="fa-brands fa-linkedin contact__i"></i>
+                                        <p class="contact__p">ViajesChile</p>
+                                    </li>
+                                    <li class="contact__li d-flex">
+                                        <i class="fa-brands fa-instagram contact__i"></i>
+                                        <p class="contact__p">viajes_chile</p>
+                                    </li>
+                                
+                                </ul>
                             </div>
-                            <div class="mb-3"> 
-                                <input type="checkbox" class=""><a href="#" class="ms-2 text-white">Acepto los términos y condiciones</a>
-                            </div>
-                            <button type="button" class="mt-1 btn btn-outline-primary bg-primary text-white col-12 col-lg-2 ">Enviar</button>
-                        </form>
-                    </section>
-                    <!-- CONTACTO -->
-                    <section class="col-12 col-md-6"">
-                        <div class="contact">
-                            <ul class="contact__ul d-flex flex-column align-items-start">
-                                <li class="contact__li d-flex">
-                                    <i class="fa-solid fa-phone contact__i"></i>
-                                    <p class="contact__p">+56999887766</p>
-                                </li>
-                                <li class="contact__li d-flex">
-                                    <i class="fa-solid fa-envelope contact__i"></i>
-                                    <p class="contact__p">contacto@viajeschile.com</p>
-                                </li>
-                                <li class="contact__li d-flex">
-                                    <i class="fa-brands fa-linkedin contact__i"></i>
-                                    <p class="contact__p">ViajesChile</p>
-                                </li>
-                                <li class="contact__li d-flex">
-                                    <i class="fa-brands fa-instagram contact__i"></i>
-                                    <p class="contact__p">viajes_chile</p>
-                                </li>
-                            
-                            </ul>
-                        </div>
-                    </section>
+                        </section>
+                    </div>
                 </div>
 
-        
+
+                <!-- Modal términos y condiciones -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Términos y Condiciones</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-dark">
+                            Usted no tiene derechos
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
         </footer>
 
 
